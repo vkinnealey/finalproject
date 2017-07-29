@@ -33,28 +33,32 @@
 		<?php endif;  // End header image check. ?>
 
 <!-- form  text COPY OUR GENERAL PAGE TEMPLATE REPLACE PHP CODE-->
-<h2>If you would like to request a recipe, please enter your information below!</h2>
+
+<h2>If you would like to request a recipe, please enter your information below and click the "Email Me!" button! </h2>
 
 <form name="Request a Recipe" method="POST" 
-onsubmit="return form_validation()" action="reciperequest.php">
+onsubmit="return" action="mailto:victoriakinnealey@gmail.com" enctype="multipart/form-data">
 Your Name <input value="Name" type="text" name="Name"/><br/><br/>
 Recipe Request <input value="Recipe" type="text" name="RecipeRequest"/><br/><br/>
 Allergies <input value="Allergies" type="text" name="Allergies"/><br/><br/>
 Email <input value="Email" type="text" name="Email"/><br/><br/>
-<input type="Submit" value="Submit"/>
+<input type="Submit" value="Email Me!"/>
 </form>
 <form action="reciperequest.php" method="get>"
 
 <?php
+
 //form components
 $name= $_POST["name"];
 $recipe_request=$_POST["recipe_request"];
 $allergies=$_POST["allergies"];
 $email=$_POST["email"];
+
+//  To redirect form on a particular page
+//if(isset($_POST["submit"])){
+//window.location= "http://www.victoriakinnealey.com/");
+//}
 ?>
-
-
-
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
