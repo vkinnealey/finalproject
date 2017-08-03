@@ -32,17 +32,16 @@
 			</a>
 		<?php endif;  // End header image check. ?>
 
-<!-- PERSONALIZED FORM CODE-->
-
-<h2>If you would like to request a recipe, please enter your information below and click the "Email Me!" button! </h2>
+<!-- form  text COPY OUR GENERAL PAGE TEMPLATE REPLACE PHP CODE-->
+<h2>If you would like to request a recipe, please enter your information below!</h2>
 
 <form name="Request a Recipe" method="POST" 
-onsubmit="return" action="mailto:victoriakinnealey@gmail.com" enctype="multipart/form-data">
+onsubmit="return form_validation()" action="reciperequest.php">
 Your Name <input value="Name" type="text" name="Name"/><br/><br/>
 Recipe Request <input value="Recipe" type="text" name="RecipeRequest"/><br/><br/>
 Allergies <input value="Allergies" type="text" name="Allergies"/><br/><br/>
 Email <input value="Email" type="text" name="Email"/><br/><br/>
-<input type="Submit" value="Email Me!"/>
+<input type="Submit" value="Submit"/>
 </form>
 <form action="reciperequest.php" method="get>"
 
@@ -53,6 +52,9 @@ $recipe_request=$_POST["recipe_request"];
 $allergies=$_POST["allergies"];
 $email=$_POST["email"];
 ?>
+
+
+
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
