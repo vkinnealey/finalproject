@@ -38,10 +38,10 @@
 
 <form name="Request a Recipe" method="POST" 
 onsubmit="return" action="mailto:victoriakinnealey@gmail.com" enctype="multipart/form-data">
-Your Name <input value=" " type="text" name="Name"/><br/><br/>
-Recipe Request <input value=" " type="text" name="RecipeRequest"/><br/><br/>
-Allergies <input value=" " type="text" name="Allergies"/><br/><br/>
-Email <input value=" " type="text" name="Email"/><br/><br/>
+Your Name <br/><input value=" " type="text" name="Name"/><br/><br/>
+Recipe Request <br/><input value=" " type="text" name="RecipeRequest"/><br/><br/>
+Allergies <br/><input value=" " type="text" name="Allergies"/><br/><br/>
+Email <br/><input value=" " type="text" name="Email"/><br/><br/>
 <input type="Submit" value="Email Me!"/>
 </form>
 <form action="reciperequest.php" method="get>"
