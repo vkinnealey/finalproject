@@ -33,7 +33,7 @@
 		<?php endif;  // End header image check. ?>
 
 <!-- PERSONALIZED FORM CODE-->
-
+<!-- START ADDED THIS-->
 <h2>If you would like to request a recipe, please enter your information below and click the "Email Me!" button! </h2>
 
 <form name="Request a Recipe" method="POST" 
@@ -53,7 +53,7 @@ $recipe_request=$_POST["recipe_request"];
 $allergies=$_POST["allergies"];
 $email=$_POST["email"];
 ?>
-
+<!--END added this -->
 <footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'penscratch' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'penscratch' ), 'WordPress' ); ?></a>
