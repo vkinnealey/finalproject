@@ -14,6 +14,7 @@
   </head>
 <body>
 <?php
+ // START edit this
 //slideshow management functionality
 function np_init() {
   add_shortcode('np-shortcode', 'np_function');
@@ -102,6 +103,7 @@ public function widget($args, $instance) {
     echo $after_widget;
 }
 }
+  //END edited this
   ?>
 </body>
 </html> 
